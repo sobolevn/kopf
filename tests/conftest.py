@@ -36,6 +36,7 @@ def pytest_configure(config):
     config.addinivalue_line('filterwarnings', 'ignore:The loop argument:DeprecationWarning:aiohttp')
     config.addinivalue_line('filterwarnings', 'ignore:The loop argument:DeprecationWarning:aiojobs')
     config.addinivalue_line('filterwarnings', 'ignore:The loop argument:DeprecationWarning:asyncio.queues')  # aiojobs
+    config.addinivalue_line('filterwarnings', 'ignore:is deprecated, use current_thread:DeprecationWarning:threading')
 
 
 def pytest_addoption(parser):
